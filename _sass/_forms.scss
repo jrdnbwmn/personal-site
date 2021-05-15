@@ -1,0 +1,308 @@
+// Base form styles
+// -------------------------------------------------------------------
+// Apply `.form-control` to any of the following form controls:
+// select
+// textarea
+// input (of any type)
+.form-control {
+    background-image: none; // Reset unusual Firefox-on-Android default style
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    color: $text-color;
+    display: block;
+    font-family: $font-family--ui;
+    font-size: .95rem;
+    line-height: $line-height--base;
+    max-width: 100%;
+    padding: $form-padding;
+    width: 100%;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// input.form-control:focus {
+//     border-color: $gray-4;
+// }
+
+.form-control--sm {
+    padding: $form-padding--sm
+}
+
+.label {
+    cursor: default;
+    display: inline-block;
+    max-width: 100%; // Force IE8 to wrap long content
+}
+
+.legend {
+    display: block;
+    white-space: normal;
+    width: 100%;
+}
+
+.form-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 0.7rem;
+
+    @media screen and (max-width: $breakpoint--sm) {
+        top: 0.55rem;
+    }
+}
+.form-icon--sm {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+}
+.input-with-icon {
+    padding-left: 53px;
+}
+.input-with-icon--sm {
+    padding-left: 38px;
+}
+
+
+// Form layouts
+// -------------------------------------------------------------------
+.form--stacked {
+    .input,
+    .select,
+    .radio,
+    .checkbox,
+    .textarea,
+    .label {
+        display: block;
+        width: 100%;
+    }
+}
+
+.form--inline {
+    .form-control {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto; // Prevent labels from stacking above inputs
+                     // in `.form-group`
+    }
+
+    .radio,
+    .checkbox {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+
+// Select
+// ----------------------------------------------------------------
+.select {
+    color: $text-color;
+    display: block;
+    position: relative;
+}
+
+.select select {
+    background-color: $white;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    color: $text-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $sans-serif;
+    line-height: $line-height--base;
+    margin: 0;
+    outline: 0;
+    padding: $form-padding;
+    width: 100%;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+    >option {
+        background-color: $white;
+    }
+}
+
+// Dropdown arrow
+.select:after {
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: "";
+    display: inline-block;
+    height: 0;
+    margin-top: -2px;
+    pointer-events: none;
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    width: 0;
+}
+
+
+// Checkboxes & radios
+// -------------------------------------------------------------------
+.control {
+    color: $text-color;
+    cursor: pointer;
+    display: block;
+    padding-left: 1.6rem;
+    position: relative;
+}
+
+.control input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1; // Put the input behind the label so it doesn't overlay text
+}
+
+.control-indicator {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    border: 2px solid $gray-3;
+    color: $text-color;
+    display: block;
+    font-size: 65%;
+    height: 19px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: .1rem;
+    width:  19px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.control input:hover ~ .control-indicator { border-color: $gray-5; }
+
+// Checked state
+.control input:checked ~ .control-indicator {
+    background-color: $primary-color;
+    color: $white;
+    transition: $fade;
+    border: 2px solid $primary-color;
+}
+
+// Active
+.control input:active ~ .control-indicator {
+    background-color: $primary-color;
+    color: $white;
+    transition: $fade;
+    border: 2px solid $primary-color;
+}
+
+// Checkbox modifiers
+.checkbox .control-indicator { border-radius: $border-radius; }
+.checkbox input:checked ~ .control-indicator {
+    background-image: url(/img/check.svg);
+    transition: $fade;
+}
+
+// Radio modifiers
+.radio .control-indicator { border-radius: 50%; }
+.radio input:checked ~ .control-indicator {
+    background-image: url(/img/radio.svg);
+    transition: $fade;
+}
+
+
+// Form groups
+// -------------------------------------------------------------------
+.form-group {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.form-group>.form-control,
+.form-group>.formkit-field,
+.form-group>.btn {
+    flex: 1 0 0%;
+    border-radius: 0;
+}
+
+.form-group>.btn:first-child:not(:last-child),
+.form-group>.form-control:first-child:not(:last-child),
+.form-group>.formkit-field:first-child:not(:last-child)>.form-control {
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 340px;
+
+    @media screen and (max-width: $breakpoint--sm) {
+        max-width: inherit;
+        border-radius: $border-radius;
+    }
+}
+
+.form-group>.btn:first-child,
+.form-group>.form-control:first-child,
+.form-group>.formkit-field:first-child {
+    margin-left: 0;
+}
+
+.form-group>.btn:last-child:not(:first-child),
+.form-group>.form-control:last-child:not(:first-child),
+.form-group>.formkit-field:last-child:not(:first-child) {
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -2px;
+    flex-basis: 170px;
+    max-width: 193px;
+
+    @media screen and (max-width: $breakpoint--sm) {
+        max-width: inherit;
+        margin-left: auto;
+        flex-basis: inherit;
+        margin-top: $space-1;
+        border-radius: $border-radius;
+    }
+}
+
+
+// Placeholder styling
+// -------------------------------------------------------------------
+::-webkit-input-placeholder {
+    color: $gray-4;
+    -webkit-font-smoothing: antialiased;
+}
+::-moz-placeholder {
+    color: $gray-4;
+    -moz-osx-font-smoothing: grayscale;
+}
+:-ms-input-placeholder {
+    color: $gray-4;
+}
+
+
+// ConvertKit
+// -------------------------------------------------------------------
+.formkit-alert-success {
+    color: $turquoise !important;
+}
+
+.formkit-slide-in {
+    max-width: 270px !important;
+    min-width: 270px !important;
+    right: 20px !important;
+    padding-bottom: 20px !important;
+
+    .formkit-alert-success {
+        font-family: $monospace !important;
+        line-height: 1.5 !important;
+        font-size: 80% !important;
+        text-align: center !important;
+    }
+}
+
+.formkit-close {
+    color: $border-color !important;
+}

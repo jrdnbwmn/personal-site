@@ -1,0 +1,29 @@
+// Base container
+// -------------------------------------------------------------------
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-container-width;
+    width: 90%;
+}
+
+.container--md {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-container-width--md;
+    width: 90%;
+}
+
+.container--lg {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-container-width--lg;
+    width: 90%;
+}
+
+.container--article {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $article-content-width;
+    width: 90%;
+}

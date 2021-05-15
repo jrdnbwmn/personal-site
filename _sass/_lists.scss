@@ -1,0 +1,44 @@
+// Base list styles
+// -------------------------------------------------------------------
+// Remove bullets
+.no-bullets { list-style: none; }
+
+// Indented list
+.list--indented,
+#markdown-toc { padding-left: $list-padding; }
+
+// Inline list
+.list--inline {
+    font-size: 0; // Part of getting rid of the inline-block ghost space
+
+    li {
+        display: inline-block;
+        font-size: 1rem; // Part of getting rid of the inline-block ghost space
+    }
+}
+
+// Arrow list
+.arrow-list li {
+    padding-left: $list-padding;
+    list-style-type: none;
+    position: relative;
+    margin-bottom: $space-4;
+}
+.arrow-list li::before {
+    background: url("../img/arrow-right.svg") no-repeat;
+    background-size: auto;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+
+    @media screen and (max-width: $breakpoint--sm) {
+        height: 17px;
+        width: 17px;
+        top: 5px;
+    }
+}

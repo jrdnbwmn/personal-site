@@ -1,0 +1,25 @@
+// Base embed styles
+// -------------------------------------------------------------------
+// Make stuff responsive
+img, canvas, iframe, video, svg { max-width: 100%; }
+
+.logo-100 {
+    width: 100px;
+    height: 100px;
+}
+
+.newsletter-down-arrow {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    bottom: 2px;
+}
+
+.book-cover {
+    max-height: 150px;
+}
+
+.author-pic {
+    height: 25px;
+    width: 25px;
+}

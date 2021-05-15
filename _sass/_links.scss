@@ -1,0 +1,90 @@
+// Base styles
+// -------------------------------------------------------------------
+// Default styling, appliable to sections or specific elements
+.default-links a,
+.default-links a:link,
+.default-links a:visited,
+.link,
+.link:link,
+.link:visited {
+    color: $text-color;
+    text-decoration: underline;
+    transition: color $fade;
+}
+
+.default-links a:hover,
+.default-links a:focus,
+.link:hover,
+.link:focus {
+    color: $link-color;
+    text-decoration: underline;
+}
+
+.default-links a:active,
+.link:active {
+    background-image: none;
+    color: $link-hover-color;
+    outline: 0;
+    transition: color $fade;
+}
+
+// Links that look like text with no difference on hover
+.link--text,
+.link--text:link,
+.link--text:visited {
+    color: $text-color;
+    text-decoration: none;
+    transition: color $fade;
+}
+
+.link--text:hover,
+.link--text:focus {
+    color: $text-color;
+    text-decoration: none;
+    transition: translate $fade;
+}
+
+.link--text:active {
+    background-image: none;
+    color: $gray-5;
+    outline: 0;
+    transition: color $fade;
+}
+
+// Links that look like text with underline on hover
+#markdown-toc a, .link--text_u,
+#markdown-toc a:link, .link--text_u:link,
+#markdown-toc a:visited, .link--text_u:visited {
+    color: $text-color;
+    text-decoration: none;
+    transition: color $fade;
+}
+
+#markdown-toc a:hover, .link--text_u:hover,
+#markdown-toc a:focus, .link--text_u:focus {
+    color: $text-color;
+    text-decoration: underline;
+    transition: translate $fade;
+}
+
+#markdown-toc a:active, .link--text_u:active {
+    background-image: none;
+    color: $gray-5;
+    outline: 0;
+    transition: color $fade;
+    text-decoration: underline;
+}
+
+// Box links
+.box-link--image {
+    max-width: 90px;
+    flex-basis: 90px;
+
+    img {
+        height: 60px;
+    }
+}
+
+.box-link:hover {
+    border-color: $gray-6;
+}
