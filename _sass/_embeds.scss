@@ -3,9 +3,13 @@
 // Make stuff responsive
 img, canvas, iframe, video, svg { max-width: 100%; }
 
-.logo-100 {
-    width: 100px;
-    height: 100px;
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.social-icon {
+    height: 25px;
 }
 
 .newsletter-down-arrow {

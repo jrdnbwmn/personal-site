@@ -1,20 +1,20 @@
 // Colors
 // -------------------------------------------------------------------
 // Grayscale
-$white:                   #fefefe !default;
+$white:                   #F6F6F5 !default;
 $gray-1:                  #F0F0EF !default;
 $gray-2:                  #DFE0E0 !default;
 $gray-3:                  #BCBCBD !default;
 $gray-4:                  #808183 !default;
 $gray-5:                  #4E5052 !default;
-$gray-6:                  #323537 !default;
+$gray-6:                  #1B2020 !default;
 
-$background:              $gray-1 !default;
+$background:              $white !default;
 
 $gray-text:               $gray-6 !default;
 
 // Hues
-$blue:                    #16a0e5 !default;
+$blue:                    #0284C7 !default;
 $light-blue:              #C6EAE3 !default;
 $turquoise:               #06BA97 !default;
 $green:                   #72c111 !default;
@@ -43,12 +43,12 @@ $half-baseline:           $baseline/2 !default;
 // Typography
 // -------------------------------------------------------------------
 // Font families
-$heading:                 "Space Grotesk", sans-serif !default;
-$sans-serif:              "IBM Plex Sans", sans-serif !default;
-$bold:                    "IBM Plex Sans Bold", sans-serif !default;
-$bold-italic:             "IBM Plex Sans Bold Italic", sans-serif !default;;
-$italic:                  "IBM Plex Sans Italic", sans-serif !default;
-$monospace:               "JetBrains Mono", Monaco, Menlo, monospace !default;
+$heading:                 acumin-pro, "Inter", sans-serif !default;
+$sans-serif:              acumin-pro, "Inter", sans-serif !default;
+$bold:                    acumin-pro, "Inter", sans-serif !default;
+$bold-italic:             acumin-pro, "Inter", sans-serif !default;
+$italic:                  acumin-pro, "Inter", sans-serif !default;
+$monospace:               Monaco, Menlo, monospace !default;
 $serif:                   Georgia, serif !default;
 
 $font-family--base:       $sans-serif !default;
@@ -57,7 +57,7 @@ $font-family--bold:       $bold !default;
 $font-family--bold-italic:$bold-italic !default;
 $font-family--italic:     $italic !default;
 $font-family--reading:    $serif !default;
-$font-family--ui:         $monospace !default;
+$font-family--ui:         $sans-serif !default;
 $font-family--code:       $monospace !default;
 
 // Type scale - good tool: http://type-scale.com/
@@ -78,7 +78,7 @@ $h5--desktop:             .75rem !default;
 $h6--desktop:             .75rem !default;
 
 // Text color
-$text-color:              $gray-text !default;
+$text-color: #F4F4F4 !default;
 
 // Text sizes
 $font-size--mobile:       16px !default;
@@ -151,7 +151,7 @@ $code-padding:            $baseline*2 $baseline*2 !default;
 
 // Buttons
 // -------------------------------------------------------------------
-$button-padding:          .45rem 1.5rem .35rem !default;
+$button-padding:          .5rem 1.6rem !default;
 $button-padding--sm:      .1rem .6rem 0 !default;
 
 
@@ -165,8 +165,8 @@ $form-padding--sm:        .1rem .5rem 0 !default;
 // -------------------------------------------------------------------
 $border-color:            $gray-3 !default;
 $border-style:            solid !default;
-$border-radius:           4px !default;
-$border-width:            2px !default;
+$border-radius:           8px !default;
+$border-width:            1px !default;
 
 
 // Shadows

@@ -39,7 +39,7 @@
 // Some mobile utilities
 // `sm:show` displays the element only on mobile devices
 // `mobile-block` makes the element go display block on mobile devices
-.sm\:show, .sm\:block { display: none !important; }
+.sm\:show { display: none !important; }
 @media screen and (max-width: $breakpoint--sm) {
     .sm\:show,
     .block-on-mobile {

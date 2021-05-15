@@ -92,7 +92,7 @@ hr {
 blockquote p {
     //border-left: 4px double $border-color;
     padding-left: $space-4;
-    font-family: $monospace;
+    font-family: $sans-serif;
     line-height: 1.5;
     font-size: 120%;
     max-width: 100%; // Prevents it from breaking out of container
@@ -106,7 +106,7 @@ blockquote p {
 // -------------------------------------------------------------------
 // Weight
 .regular                 { font-weight: $font-weight--base; }
-.bold, strong            { font-family: $font-family--bold; }
+.bold, strong            { font-weight: $font-weight--heading; }
 .bold-italic             { font-family: $font-family--bold-italic; }
 .italic, em              { font-family: $font-family--italic; font-style: normal; }
 
@@ -140,3 +140,8 @@ blockquote p {
 // Misc
 .underline-on-hover:hover{ text-decoration: underline; }
 .font-80 { font-size: 80% !important; }
+.all-caps {
+    font-size: 100%;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
