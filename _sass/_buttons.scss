@@ -104,13 +104,30 @@ a.btn {
 
     &:hover,
     &:focus {
-        background-color: $white;
-        border-color: $white;
+        background-color: $gray-2;
+        border-color: $gray-2;
     }
 
     &:active {
         background-color: $gray-6;
         border-color: $gray-6;
+    }
+}
+
+.btn--dark {
+    background-color: $gray-6;
+    border-color: $gray-6;
+    color: $white;
+
+    &:hover,
+    &:focus {
+        background-color: $gray-5;
+        border-color: $gray-5;
+    }
+
+    &:active {
+        background-color: $white;
+        border-color: $white;
     }
 }
 

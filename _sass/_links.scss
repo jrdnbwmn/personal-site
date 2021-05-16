@@ -16,14 +16,36 @@
 .default-links a:focus,
 .link:hover,
 .link:focus {
-    color: $link-color;
+    color: $gray-3;
     text-decoration: underline;
 }
 
 .default-links a:active,
 .link:active {
     background-image: none;
-    color: $link-hover-color;
+    color: $gray-5;
+    outline: 0;
+    transition: color $fade;
+}
+
+// Default styling, appliable to sections or specific elements
+.link--dark,
+.link--dark:link,
+.link--dark:visited {
+    color: $gray-6;
+    text-decoration: underline;
+    transition: color $fade;
+}
+
+.link--dark:hover,
+.link--dark:focus {
+    color: $gray-4;
+    text-decoration: underline;
+}
+
+.link--dark:active {
+    background-image: none;
+    color: $gray-3;
     outline: 0;
     transition: color $fade;
 }
@@ -47,6 +69,29 @@
 .link--text:active {
     background-image: none;
     color: $gray-5;
+    outline: 0;
+    transition: color $fade;
+}
+
+// Links that look like text with no difference on hover
+.link--text-dark,
+.link--text-dark:link,
+.link--text-dark:visited {
+    color: $gray-6;
+    text-decoration: none;
+    transition: color $fade;
+}
+
+.link--text-dark:hover,
+.link--text-dark:focus {
+    color: $gray-4;
+    text-decoration: none;
+    transition: translate $fade;
+}
+
+.link--text-dark:active {
+    background-image: none;
+    color: $gray-3;
     outline: 0;
     transition: color $fade;
 }

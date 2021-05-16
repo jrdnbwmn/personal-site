@@ -24,8 +24,16 @@ html {
 //    other systems that do not render text using sub-pixel anti-aliasing.
 // 2. For now, this is `!important` because the `::selection` (below) affects
 //    the background color in IE.
+.dark-body { 
+    background-color: $gray-6 !important;
+    color: $white;
+} // [2]
+.light-body {
+    background-color: $white !important;
+    color: $gray-6;
+} // [2]
+
 body {
-    background-color: $gray-6 !important; // [2]
     color: $text-color;
     line-height: $line-height--base;
     margin: 0;
@@ -36,12 +44,12 @@ body {
 // Remove text-shadow in selection highlight: h5bp.com/i
 // These selection rule sets have to be separate.
 ::-moz-selection {
-    background-color: $primary-color;
+    background-color: $gray-3;
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background-color: $primary-color;
+    background-color: $gray-3;
     color: #fff;
     text-shadow: none;
 }

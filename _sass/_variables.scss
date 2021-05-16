@@ -137,9 +137,9 @@ $article-aside-width:     $article-content-width + ($space-5*2) !default;
 
 // Links
 // -------------------------------------------------------------------
-$link-color:              $primary-color !default;
-$link-hover-color:        darken($primary-color, 10%) !default;
-$active-link-color:       darken($primary-color, 25%) !default;
+$link-color:              $text-color !default;
+$link-hover-color:        $gray-3 !default;
+$active-link-color:       $gray-4 !default;
 
 
 // Code
@@ -157,8 +157,8 @@ $button-padding--sm:      .1rem .6rem 0 !default;
 
 // Forms
 // -------------------------------------------------------------------
-$form-padding:            .45rem .8rem .35rem !default;
-$form-padding--sm:        .1rem .5rem 0 !default;
+$form-padding:            .5rem .8rem !default;
+$form-padding--sm:        .1rem .6rem 0 !default;
 
 
 // Borders
