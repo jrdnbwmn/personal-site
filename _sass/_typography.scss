@@ -67,6 +67,10 @@ h6 { color: $gray-3; }
     margin-bottom: $heading-mb;
 }
 
+.heading-text-lh {
+    line-height: 1.4;
+}
+
 // Paragraph
 p { margin: 0 auto $p-mb auto; }
 

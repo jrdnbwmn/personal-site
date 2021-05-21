@@ -72,14 +72,14 @@
         background-size: contain;
         content: '';
         display: block;
-        height: 22px;
-        width: 22px;
+        height: 15px;
+        width: 15px;
         position: absolute;
         left: 0;
         top: 5px;
         @media screen and (max-width: $breakpoint--sm) {
-            height: 17px;
-            width: 17px;
+            height: 15px;
+            width: 15px;
             top: 5px;
         }
     }
@@ -192,8 +192,8 @@
         #markdown-toc {
             margin-left: $space-4;
             margin-right: $space-4;
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
 
             li {
                 padding-right: 0;
