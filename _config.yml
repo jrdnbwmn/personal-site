@@ -1,74 +1,15 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+url: ''
+baseurl: ''
+title: 'Jekyllwind'
 
-title: Jordan Bowman
-email: desk@jrdnbwmn.com
-tagline: Senior UX Designer & Researcher
-description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Senior Product Designer and Researcher with 8+ years constructing digital experiences. I'm passionate about user-first, evidence-based design.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jrdnbwmn.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jrdnbwmn
-author:
-  twitter: jrdnbwmn
-twitter:
-  username: jrdnbwmn
-logo: /img/share.jpg
-image: /img/share.jpg
-social:
-  name: Jordan Bowman
-  links:
-    - https://twitter.com/jrdnbwmn
-lang: en_US
-
-# Build settings
-markdown: kramdown
-sass:
-  sass_dir: _sass
-  style: compressed # possible values: nested expanded compact compressed
-  sourcemap: never
-
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-typogrify
-  - jekyll-sitemap
+  - jekyll-postcss
 
-# Other
-timezone: America/New_York
+postcss:
+  cache: false
 
-# Exclude from processing
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md
-  - pre-jekyll
-
-# Keep these files safe
-keep_files:
-  - .git
-  - .svn
-  - .gitignore
-  - CNAME
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock
