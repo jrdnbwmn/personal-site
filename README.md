@@ -1,3 +1,5 @@
+JEKYLL_ENV=production bundle exec jekyll serve --livereload
+
 # Jekyllwind: a Jekyll + Tailwind CSS boilerplate
 
 ![Jekyll + Tailwind CSS](https://mzrn.sh/assets/uploads/jekyll-tailwindcss.png)
