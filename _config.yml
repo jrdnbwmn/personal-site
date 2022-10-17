@@ -35,8 +35,14 @@ defaults:
 url: 'https://www.jrdnbwmn.com' # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ''
 
-# Articles path
-permalink: /blog/:title/
+# Posts path
+permalink: /post/:title/
+
+# Collections
+collections:
+  tools:
+    output: true
+    permalink: /stack/:title
 
 # Build settings
 markdown: kramdown
