@@ -43,6 +43,9 @@ collections:
   tools:
     output: true
     permalink: /stack/:title
+  bookmarks:
+    output: true
+    permalink: /bookmarks/:title
 
 # Build settings
 markdown: kramdown
