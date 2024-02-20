@@ -1,5 +1,8 @@
 # Personal Site
 
+## Install
+`bundle`
+
 ## Jekyll Development
 Use: `JEKYLL_ENV=production bundle exec jekyll serve --livereload` to get development up and running.
 
