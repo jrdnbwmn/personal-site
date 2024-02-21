@@ -4,6 +4,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+Gemfile.lock
+**/Gemfile.lock
 
 # Compiled source
 *.com
@@ -56,6 +58,7 @@ nbproject
 
 # Gulp/Node
 node_modules/
+package-lock.json
 
 # Other
 archive
