@@ -1,4 +1,90 @@
-# Welcome to Jekyll!
+# Build settings
+future: false # Change this to true when you're working on a future post
+postcss:
+  cache: false
+markdown: kramdown
+permalink: /post/:title/ # Posts path
+
+# Content
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+    values:
+      image: /img/default-share.png
+collections:
+  tools:
+    output: true
+    permalink: /stack/:title
+  bookmarks:
+    output: true
+    permalink: /bookmarks/:title
+
+# Site settings
+title: Jordan Bowman
+tagline: Practical UX skills and tools
+baseurl: ''
+url: "https://www.jrdnbwmn.com" # the base hostname & protocol for your site, e.g. http://example.com, for jekyll-seo-tag
+description: >- # this means to ignore newlines until "baseurl:"
+  Lessons and resources from two full-time product designers.
+timezone: America/New_York
+lang: en_US
+encoding: utf-8 # Make sure the encoding is right
+email: desk@jrdnbwmn.com
+logo: /img/jordan-bowman.png
+image: /img/jordan-bowman.png
+
+# Social
+social:
+  name: Jordan Bowman
+  links:
+    - https://twitter.com/jrdnbwmn
+twitter_username: jrdnbwmn
+author:
+  twitter: jrdnbwmn
+twitter:
+  username: jrdnbwmn
+  card: summary_large_image
+
+# Plugins
+plugins:
+  - jekyll-postcss
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-typogrify
+  - jekyll-sitemap # Keep at end
+
+# Files excluded from Jekyll builds
+exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .sass-cache/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js
+
+# Keep these files safe
+keep_files:
+  - .git
+  - .svn
+  - .gitignore
+  - CNAME
+
+# Notes
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -8,67 +94,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
-title: Jordan Bowman
-email: desk@jrdnbwmn.com
-tagline: Senior UX Designer & Researcher
-description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Senior Product Designer and Researcher with 8+ years constructing digital experiences. I'm passionate about user-first, evidence-based design.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jrdnbwmn.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jrdnbwmn
-author:
-  twitter: jrdnbwmn
-twitter:
-  username: jrdnbwmn
-logo: /img/share.jpg
-image: /img/share.jpg
-social:
-  name: Jordan Bowman
-  links:
-    - https://twitter.com/jrdnbwmn
-lang: en_US
-
-# Build settings
-markdown: kramdown
-sass:
-  sass_dir: _sass
-  style: compressed # possible values: nested expanded compact compressed
-  sourcemap: never
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-typogrify
-  - jekyll-sitemap
-
-# Other
-timezone: America/New_York
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - README.md
-  - pre-jekyll
-
-# Keep these files safe
-keep_files:
-  - .git
-  - .svn
-  - .gitignore
-  - CNAME
