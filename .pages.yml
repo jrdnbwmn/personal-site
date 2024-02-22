@@ -7,10 +7,6 @@ content:
     view:
       fields: [ published, title, summary, link, image-html ]
     fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
       - name: title
         label: Title
         type: string
@@ -30,10 +26,6 @@ content:
     view:
       fields: [ published, title, link, date ]
     fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
       - name: title
         label: Title
         type: string
