@@ -16,7 +16,7 @@ content:
         label: Tags
         type: select
         options:
-          values: [ design, development ]
+          values: [ design, development, productivity, media ]
       - name: title
         label: Title
         type: string
@@ -48,7 +48,7 @@ content:
         label: Tags
         type: select
         options:
-          values: [ design, development ]
+          values: [ design, development, productivity, media ]
       - name: title
         label: Title
         type: string
