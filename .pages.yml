@@ -21,15 +21,19 @@ content:
       - name: title
         label: Title
         type: string
+        required: true
       - name: summary
         label: Summary
         type: string
+        required: true
       - name: link
         label: Link
         type: string
+        required: true
       - name: image-html
         label: Image HTML
         type: code
+        required: true
       - name: body
         label: Body
         type: rich-text
@@ -43,6 +47,7 @@ content:
       - name: layout
         label: Layout
         type: select
+        required: true
         options:
           values: [ tool, stack ]
       - name: tags
@@ -53,12 +58,15 @@ content:
       - name: title
         label: Title
         type: string
+        required: true
       - name: summary
         label: Summary
         type: string
+        required: true
       - name: link
         label: Link
         type: string
+        required: true
       - name: body
         label: Body
         type: rich-text
