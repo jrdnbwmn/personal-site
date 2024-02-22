@@ -26,9 +26,6 @@ content:
       - name: link
         label: Link
         type: string
-      - name: image-html
-        label: Image HTML
-        type: code
       - name: body
         label: Body
         type: rich-text
