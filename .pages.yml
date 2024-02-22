@@ -32,7 +32,7 @@ content:
         required: true
       - name: image-html
         label: Image HTML
-        type: code
+        type: string
         required: true
       - name: body
         label: Body
