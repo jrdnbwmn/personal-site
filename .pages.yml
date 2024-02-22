@@ -5,7 +5,7 @@ content:
     type: collection
     path: '_tools'
     view:
-      fields: [ published, title, summary, link, image-html ]
+      fields: [ title, summary, link, image-html ]
     fields:
       - name: title
         label: Title
@@ -24,7 +24,7 @@ content:
     type: collection
     path: '_bookmarks'
     view:
-      fields: [ published, title, link, date ]
+      fields: [ title, link, date ]
     fields:
       - name: title
         label: Title
