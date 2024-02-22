@@ -5,7 +5,7 @@ content:
     type: collection
     path: '_tools'
     view:
-      fields: [ title, tags, image-html ]
+      fields: [ title, tags ]
     fields:
       - name: layout
         label: Layout
