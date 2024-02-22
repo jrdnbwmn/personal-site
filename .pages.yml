@@ -10,6 +10,7 @@ content:
       - name: layout
         label: Layout
         type: select
+        required: true
         options:
           values: [ tool, stack ]
       - name: tags
