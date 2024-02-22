@@ -5,7 +5,7 @@ content:
     type: collection
     path: '_tools'
     view:
-      fields: [ tags, title, image-html ]
+      fields: [ title, tags, image-html ]
     fields:
       - name: layout
         label: Layout
@@ -37,7 +37,7 @@ content:
     type: collection
     path: '_bookmarks'
     view:
-      fields: [ tags, title, date ]
+      fields: [ title, tags, date ]
     fields:
       - name: layout
         label: Layout
