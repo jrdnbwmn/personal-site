@@ -5,7 +5,7 @@ content:
     type: collection
     path: '_tools'
     view:
-      fields: [ published, title, tags, summary, link, image-html ]
+      fields: [ published, title, summary, link, image-html ]
     fields:
       - name: published
         label: Published
