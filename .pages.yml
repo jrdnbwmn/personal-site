@@ -5,8 +5,18 @@ content:
     type: collection
     path: '_tools'
     view:
-      fields: [ title, summary, link, image-html ]
+      fields: [ layout, tags, title, summary, link, image-html ]
     fields:
+      - name: layout
+        label: Layout
+        type: select
+        options:
+          values: [ tool, stack ]
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          values: [ design, development ]
       - name: title
         label: Title
         type: string
@@ -24,8 +34,18 @@ content:
     type: collection
     path: '_bookmarks'
     view:
-      fields: [ title, link, date ]
+      fields: [ layout, tags, title, link, date ]
     fields:
+      - name: layout
+        label: Layout
+        type: select
+        options:
+          values: [ tool, stack ]
+      - name: tags
+        label: Tags
+        type: select
+        options:
+          values: [ design, development ]
       - name: title
         label: Title
         type: string
