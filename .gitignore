@@ -57,8 +57,9 @@ nbproject
 *.css.map
 
 # Gulp/Node
-node_modules/
+node_modules
 package-lock.json
 
 # Other
 archive
+.env
