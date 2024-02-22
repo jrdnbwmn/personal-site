@@ -37,7 +37,7 @@ content:
     type: collection
     path: '_bookmarks'
     view:
-      fields: [ title, tags, date ]
+      fields: [ title, tags ]
     fields:
       - name: layout
         label: Layout
@@ -58,9 +58,6 @@ content:
       - name: link
         label: Link
         type: string
-      - name: date
-        label: Date
-        type: date
       - name: body
         label: Body
         type: rich-text
