@@ -1,5 +1,5 @@
 ---
-title: GitHub
+title: Coffee
 tags: development
 link: https://trycoffee.co/
 image: /assets/img/inspiration/Coffee.png
