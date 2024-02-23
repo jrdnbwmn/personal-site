@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "Pocket Casts"
 tags: media
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "CleanShot X"
 tags: productivity
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "1Password"
 tags: development
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "Hyper"
 tags: development
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

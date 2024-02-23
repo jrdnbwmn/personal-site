@@ -7,12 +7,6 @@ content:
     view:
       fields: [ title, tags ]
     fields:
-      - name: layout
-        label: Layout
-        type: select
-        required: true
-        options:
-          values: [ tool, stack ]
       - name: tags
         label: Tags
         type: select
@@ -44,12 +38,6 @@ content:
     view:
       fields: [ title, tags ]
     fields:
-      - name: layout
-        label: Layout
-        type: select
-        required: true
-        options:
-          values: [ tool, stack ]
       - name: tags
         label: Tags
         type: select
@@ -77,12 +65,6 @@ content:
     view:
       fields: [ title, tags ]
     fields:
-      - name: layout
-        label: Layout
-        type: select
-        required: true
-        options:
-          values: [ tool, stack ]
       - name: tags
         label: Tags
         type: select

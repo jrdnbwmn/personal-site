@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "Notion"
 tags: productivity
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

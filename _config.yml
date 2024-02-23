@@ -10,14 +10,21 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "posts"
+      type: "bookmarks"
     values:
-      layout: "post"
+      layout: "bookmark"
   -
     scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
+      type: "tools"
     values:
-      image: /img/default-share.png
+      layout: "tool"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "inspiration"
+    values:
+      layout: "inspiration"
 collections:
   tools:
     output: true

@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "Figma"
 tags: design
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

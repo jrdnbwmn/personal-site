@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: "Todoist"
 tags: productivity
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

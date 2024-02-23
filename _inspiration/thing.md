@@ -1,5 +1,4 @@
 ---
-layout: tool
 title: Thing
 tags: development
 link: 
