@@ -1,8 +1,8 @@
 ---
 title: Thing
 tags: development
-link: 
-image: assets/img/stack/1password.png
+title: Coffee
+link: https://trycoffee.co/
+image: /assets/img/inspiration/Coffee.png
 ---
-
-thing description
+Landing page, liked the little interactions on the buttons.
