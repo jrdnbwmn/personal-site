@@ -1,9 +1,8 @@
 ---
 layout: tool
-title: Thing
 tags: development
-link: 
-image: assets/img/stack/1password.png
+title: Coffee landing page
+link: https://trycoffee.co/
+image: /assets/img/inspiration/Coffee.png
 ---
-
 thing description
