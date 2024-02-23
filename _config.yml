@@ -25,6 +25,9 @@ collections:
   bookmarks:
     output: true
     permalink: /bookmarks/:title
+  inspiration:
+    output: true
+    permalink: /inspiration/:title
 
 # Site settings
 title: Jordan Bowman
