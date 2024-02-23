@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="p-14">
+    <h1 class="text-2xl mb-6">Craft</h1>
+    <div class="columns-3 gap-4 w-full">
+
+        <!-- Classes aren't being recognized -->
+        {% for inspiration in site.inspiration %}
+        <a class="block mb-4 border rounded-lg hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ inspiration.url }}">
+            <img class="rounded-lg" src="{{ inspiration.image }}">
+        </a>
+        {% endfor %}
+
+    </div>
+</div>

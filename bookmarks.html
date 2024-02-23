@@ -8,7 +8,7 @@ layout: default
 
         <!-- Classes aren't being recognized -->
         {% for bookmark in site.bookmarks %}
-        <a class="border rounded-lg p-10 hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ tool.url }}">
+        <a class="border rounded-lg p-10 hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ bookmark.url }}">
             <h4 class="text-xl mt-10">{{ bookmark.title }}</h4>
         </a>
         {% endfor %}

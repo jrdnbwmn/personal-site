@@ -1,7 +1,6 @@
 ---
-title: Thing
+title: GitHub
 tags: development
-title: Coffee
 link: https://trycoffee.co/
 image: /assets/img/inspiration/Coffee.png
 ---
