@@ -59,7 +59,7 @@ content:
         label: Body
         type: rich-text
   - name: stash
-    label: stash
+    label: Stash
     type: collection
     path: '_stash'
     view:
