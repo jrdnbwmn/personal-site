@@ -28,7 +28,7 @@ defaults:
 collections:
   tools:
     output: true
-    permalink: /stack/:title
+    permalink: /tools/:title
   bookmarks:
     output: true
     permalink: /bookmarks/:title
