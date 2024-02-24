@@ -1,5 +1,6 @@
 ---
 layout: default
+active: stash
 ---
 
 <div class="p-14">
@@ -8,7 +9,7 @@ layout: default
 
         {% for stash in site.stash %}
         <a class="block mb-4 border rounded-lg hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ stash.url }}">
-            <img class="rounded-lg" src="{{ stash.image }}">
+            <img loading="lazy" class="rounded-lg" src="{{ stash.image }}">
         </a>
         {% endfor %}
 

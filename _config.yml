@@ -13,18 +13,21 @@ defaults:
       type: "bookmarks"
     values:
       layout: "bookmark"
+      active: "bookmarks"
   -
     scope:
       path: "" # an empty string here means all files in the project
       type: "tools"
     values:
       layout: "tool"
+      active: "tools"
   -
     scope:
       path: "" # an empty string here means all files in the project
       type: "stash"
     values:
       layout: "stash"
+      active: "stash"
 collections:
   tools:
     output: true
