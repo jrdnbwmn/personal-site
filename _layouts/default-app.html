@@ -5,11 +5,13 @@
 
     <body>
 
-        <div>
+        <div class="flex h-screen">
 
             {%- include nav.html -%}
 
-            {{ content }}
+            <div class="grow overflow-auto">
+                {{ content }}
+            </div>
 
         </div>
 
