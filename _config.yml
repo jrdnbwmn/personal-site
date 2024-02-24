@@ -22,9 +22,9 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "inspiration"
+      type: "stash"
     values:
-      layout: "inspiration"
+      layout: "stash"
 collections:
   tools:
     output: true
@@ -32,9 +32,9 @@ collections:
   bookmarks:
     output: true
     permalink: /bookmarks/:title
-  inspiration:
+  stash:
     output: true
-    permalink: /inspiration/:title
+    permalink: /stash/:title
 
 # Site settings
 title: Jordan Bowman

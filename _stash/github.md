@@ -2,6 +2,6 @@
 title: GitHub
 tags: development
 link: https://github.com/
-image: /assets/img/inspiration/github.png
+image: /assets/img/stash/github.png
 ---
-Landing page
+Landing page 

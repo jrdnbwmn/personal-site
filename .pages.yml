@@ -58,10 +58,10 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: inspiration
-    label: Inspiration
+  - name: stash
+    label: stash
     type: collection
-    path: '_inspiration'
+    path: '_stash'
     view:
       fields: [ title, tags ]
     fields:

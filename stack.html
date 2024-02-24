@@ -6,7 +6,6 @@ layout: stack
     <h1 class="text-2xl mb-6">Personal Tool Stack</h1>
     <div class="grid grid-cols-4 gap-4">
 
-        <!-- Classes aren't being recognized -->
         {% for tool in site.tools %}
         <a class="border rounded-lg p-10 hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ tool.url }}">
             <div>{{ tool.image-html }}</div>
