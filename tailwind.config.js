@@ -16,6 +16,11 @@ module.exports = {
 	  'display': ['Inter'],
 	  'body': ['Inter']
 	},
+	extend: {
+	  spacing: {
+		'160': '40rem',
+	  }
+	}
   },
   plugins: [
 	  require('@tailwindcss/typography'),

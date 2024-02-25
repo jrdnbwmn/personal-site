@@ -1,20 +1,26 @@
 ---
-layout: default
+layout: default-color
 ---
 
-<div class="container mx-auto max-w-3xl p-10">
-    <div class="pb-5">
-        <a href="/tools/">← Back</a>
-    </div>
-
-    <div>{{ page.image-html }}</div>
-
-    <h4 class="text-2xl">{{ page.title }}</h4>
-
-    <a href="{{ page.link }}" target="_blank">Website</a>
-    
-    <img src="{{ page.image }}" alt="{{ page.title }}">
-
-    {{ content }}
-</div>
-
+<!doctype html>
+<html lang="en-us">
+    {%- include head.html -%}
+    <body>
+        <div>
+            {%- include nav.html -%}
+        
+            <div class="container mx-auto max-w-3xl p-10">
+                <div class="pb-5">
+                    <a href="/tools/">← Back</a>
+                </div>
+            
+                <div>{{ page.image-html }}</div>
+            
+                <h4 class="text-2xl">{{ page.title }}</h4>
+            
+                <a href="{{ page.link }}" target="_blank">Website</a>
+                
+                <img src="{{ page.image }}" alt="{{ page.title }}">
+            
+                {{ content }}
+            </div>
