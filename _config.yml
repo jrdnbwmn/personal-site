@@ -17,17 +17,17 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "stash"
+      type: "pinboard"
     values:
-      layout: "stash"
-      active: "stash"
+      layout: "pinboard"
+      active: "pinboard"
 collections:
   tools:
     output: true
     permalink: /tools/:title
-  stash:
+  pinboard:
     output: true
-    permalink: /stash/:title
+    permalink: /pinboard/:title
 
 # Site settings
 title: Jordan Bowman

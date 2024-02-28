@@ -2,6 +2,6 @@
 title: Fael
 tags: development
 link: https://www.fael.pt/
-image: /assets/img/stash/fael.png
+image: /assets/img/pinboard/fael.png
 ---
 Landing page

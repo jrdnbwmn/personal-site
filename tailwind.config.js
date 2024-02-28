@@ -10,11 +10,11 @@ module.exports = {
   ],
   theme: {
 	fontFamily: {
-	  'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
-	  'serif': ['ui-serif', 'Georgia'],
-	  'mono': ['ui-monospace', 'SFMono-Regular'],
-	  'display': ['Inter'],
-	  'body': ['Inter']
+	  'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+	  'serif': ['ui-serif', 'Georgia', 'serif'],
+	  'mono': ['ui-monospace', 'SFMono-Regular', 'monospace'],
+	  'display': ['Karla', 'sans-serif'],
+	  'body': ['Inter', 'sans-serif']
 	},
 	extend: {
 	  spacing: {

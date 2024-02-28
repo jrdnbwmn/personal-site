@@ -31,10 +31,10 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: stash
-    label: Stash
+  - name: pinboard
+    label: Pinboard
     type: collection
-    path: '_stash'
+    path: '_pinboard'
     view:
       fields: [ title, tags ]
     fields:
