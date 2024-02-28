@@ -12,14 +12,14 @@ active: stash
             {%- include nav.html -%}
             <div class="container mx-auto px-4 max-w-6xl">
                 <div class="pt-12 pb-24 mb-36">
-                    <h1 class="text-5xl font-bold mb-6">Pinboard</h1>
+                    <h1 class="text-5xl font-bold mb-6 font-display font-extrabold">Pinboard</h1>
                     <p class="text-2xl max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Causa autem fuit huc veniendi ut quosdam.</p>
                 </div>
                 <div class="columns-3 gap-4 w-full">
             
-                    {% for stash in site.stash %}
-                    <a class="block mb-4 border rounded-lg hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ stash.url }}">
-                        <img loading="lazy" class="rounded-lg" src="{{ stash.image }}">
+                    {% for pinboard in site.pinboard %}
+                    <a class="block mb-4 border rounded-lg hover:border-slate-400 hover:bg-slate-50 duration-200" href="{{ pinboard.url }}">
+                        <img loading="lazy" class="rounded-lg" src="{{ pinboard.image }}">
                     </a>
                     {% endfor %}
             
