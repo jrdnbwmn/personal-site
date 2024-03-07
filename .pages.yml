@@ -55,6 +55,8 @@ content:
         label: Image
         type: image
         required: true
+        options:
+          extensions: [ jpg, jpeg, png, webp, svg, gif ]
       - name: body
         label: Body
         type: rich-text
