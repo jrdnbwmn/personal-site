@@ -15,7 +15,7 @@ content:
         label: Tags
         type: select
         options:
-          values: [ landing page, graphics, app ]
+          values: [ design, development, productivity, media ]
       - name: summary
         label: Summary
         type: string
@@ -46,7 +46,7 @@ content:
         label: Tags
         type: select
         options:
-          values: [ design, development, productivity, media ]
+          values: [ landing page, graphics, app ]
       - name: link
         label: Link
         type: string
