@@ -1,6 +1,6 @@
 ---
 title: Brandon Nickerson
-tags: development
+tags: [ graphics ]
 link: https://www.bnicks.com/
 image: /assets/img/pinboard/bnicks.png
 ---

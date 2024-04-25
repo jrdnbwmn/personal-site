@@ -1,6 +1,6 @@
 ---
 title: GitHub
-tags: development
+tags: [ landing-page ]
 link: https://github.com/
 image: /assets/img/pinboard/github.png
 ---

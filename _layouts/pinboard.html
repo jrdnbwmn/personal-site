@@ -9,18 +9,19 @@ layout: default-color
         <div>
             {%- include nav.html -%}
         
-            <div class="container mx-auto max-w-3xl p-10">
+            <div class="container mx-auto px-4 py-12 max-w-6xl">
                 <div class="pb-5">
-                    <a href="/tools/">← Back</a>
+                    <a href="/pinboard/">← Back</a>
                 </div>
             
                 <div>{{ page.image-html }}</div>
             
-                <h4 class="text-2xl">{{ page.title }}</h4>
-            
-                <a href="{{ page.link }}" target="_blank">Website</a>
+                <a class="block" href="{{ page.link }}" target="_blank">See original →</a>
                 
-                <img src="{{ page.image }}" alt="{{ page.title }}">
+                <div class="mb-10">
+                    {{ content }}
+                </div>
+                
+                <img class="rounded-lg border" src="{{ page.image }}" alt="{{ page.title }}">
             
-                {{ content }}
             </div>

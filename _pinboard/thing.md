@@ -1,6 +1,6 @@
 ---
 title: Coffee
-tags: development
+tags: [ landing-page ]
 link: https://trycoffee.co/
 image: /assets/img/pinboard/Coffee.png
 ---

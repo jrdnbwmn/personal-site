@@ -1,6 +1,48 @@
 ---
 ---
 
+html { font-size: 19px; }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Excon-Variable';
+  src: url('/fonts/Excon-Variable.woff2') format('woff2'),
+	   url('/fonts/Excon-Variable.woff') format('woff'),
+	   url('/fonts/Excon-Variable.ttf') format('truetype');
+	   font-weight: 100 900;
+	   font-display: swap;
+	   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
+	   url('/fonts/Satoshi-Variable.woff') format('woff'),
+	   url('/fonts/Satoshi-Variable.ttf') format('truetype');
+	   font-weight: 300 900;
+	   font-display: swap;
+	   font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('/fonts/GeneralSans-Variable.woff2') format('woff2'),
+	   url('/fonts/GeneralSans-Variable.woff') format('woff'),
+	   url('/fonts/GeneralSans-Variable.ttf') format('truetype');
+	   font-weight: 200 700;
+	   font-display: swap;
+	   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Switzer-Variable';
+  src: url('/fonts/Switzer-Variable.woff2') format('woff2'),
+	   url('/fonts/Switzer-Variable.woff') format('woff'),
+	   url('/fonts/Switzer-Variable.ttf') format('truetype');
+	   font-weight: 100 900;
+	   font-display: swap;
+	   font-style: normal;
+}
