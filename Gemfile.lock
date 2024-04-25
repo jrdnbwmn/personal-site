@@ -48,6 +48,8 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-tagories (0.1.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-typogrify (0.3.5)
       titlecase
       typogruby
@@ -135,6 +137,7 @@ DEPENDENCIES
   jekyll-postcss
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-tagories
   jekyll-typogrify
 
 BUNDLED WITH

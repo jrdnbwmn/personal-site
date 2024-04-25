@@ -10,10 +10,9 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-      type: "tools"
+      type: "posts"
     values:
-      layout: "tool"
-      active: "tools"
+      layout: "post"
   -
     scope:
       path: "" # an empty string here means all files in the project
@@ -21,13 +20,38 @@ defaults:
     values:
       layout: "pinboard"
       active: "pinboard"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "tools"
+    values:
+      layout: "tool"
+      active: "tools"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      image: /img/default-share.png
 collections:
   tools:
     output: true
     permalink: /tools/:title
+  bookmarks:
+    output: true
+    permalink: /bookmarks/:title
   pinboard:
     output: true
     permalink: /pinboard/:title
+jekyll-archives:
+    enabled:
+      - tags
+      - categories
+    layouts:
+      tag: default
+      category: default
+    permalinks:
+      tag: '/tag/:name/'
+      category: '/category/:name/'
 
 # Site settings
 title: Jordan Bowman
@@ -63,6 +87,7 @@ plugins:
   - jekyll-paginate
   - jekyll-archives
   - jekyll-typogrify
+  - jekyll-tagories
   - jekyll-sitemap # Keep at end
 
 # Files excluded from Jekyll builds
