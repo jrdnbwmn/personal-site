@@ -10,14 +10,14 @@ module.exports = {
   ],
   theme: {
 	fontFamily: {
-	  'sans': ['Basier Square', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+	  'sans': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 	  'serif': ['ui-serif', 'Georgia', 'serif'],
 	  'mono': ['ui-monospace', 'SFMono-Regular', 'monospace'],
-	  'display': ['Basier Square', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-	  'body': ['Basier Square', 'ui-sans-serif', 'system-ui', 'sans-serif']
+	  'display': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+	  'body': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif']
 	},
 	borderRadius: {
-		'xl': '1.75rem'
+		'xl': '24px'
 	},
 	extend: {
 	  spacing: {
