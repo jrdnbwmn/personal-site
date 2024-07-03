@@ -1,7 +1,9 @@
 ---
 ---
 
-html { font-size: 19px; }
+html {
+	font-size: 22px;
+}
 
 @tailwind base;
 @tailwind components;
