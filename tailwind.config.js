@@ -12,9 +12,9 @@ module.exports = {
 	fontFamily: {
 	  'sans': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 	  'serif': ['ui-serif', 'Georgia', 'serif'],
-	  'mono': ['ui-monospace', 'SFMono-Regular', 'monospace'],
+	  'mono': ["Menlo", 'ui-monospace', 'SFMono-Regular', 'monospace'],
 	  'display': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-	  'body': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif']
+	  'body': ['GitLab Sans', 'Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif']
 	},
 	borderRadius: {
 		'xl': '24px'
