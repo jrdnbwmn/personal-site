@@ -10,10 +10,10 @@ module.exports = {
   ],
   theme: {
 	fontFamily: {
-	  'sans': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+	  'sans': ['Roobert Trial', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 	  'serif': ['ui-serif', 'Georgia', 'serif'],
 	  'mono': ["Menlo", 'ui-monospace', 'SFMono-Regular', 'monospace'],
-	  'display': ['Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+	  'display': ['Roobert Trial', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 	  'body': ['GitLab Sans', 'Basier Circle', 'ui-sans-serif', 'system-ui', 'sans-serif']
 	},
 	borderRadius: {
@@ -22,6 +22,9 @@ module.exports = {
 	extend: {
 	  spacing: {
 		'160': '40rem',
+	  },
+	  maxWidth: {
+		'screen-2xl': '1600px',
 	  }
 	}
   },
