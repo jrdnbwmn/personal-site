@@ -9,6 +9,18 @@ html {
 	}
 }
 
+.link-underline {
+	background-image: linear-gradient(currentColor, currentColor);
+	background-repeat: no-repeat;
+	transition: background-size .3s;
+	background-position: 100% 100%;
+	background-size: 0 2px;
+}
+.link-underline:hover {
+	background-position: 0 100%;
+	background-size: 100% 2px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
