@@ -1,6 +1,10 @@
 ---
 ---
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
 	font-size: 18px;
 
@@ -16,14 +20,114 @@ html {
 	background-position: 100% 100%;
 	background-size: 0 2px;
 }
+
 .link-underline:hover {
 	background-position: 0 100%;
 	background-size: 100% 2px;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.mobile-toolbar,
+.mobile-nav {
+	display: block;
+}
+
+@media screen and (min-width: 875px) {
+
+	.mobile-toolbar,
+	.mobile-nav {
+		display: none;
+	}
+}
+
+.mobile-nav-menu {
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	display: none;
+}
+
+.mobile-nav-menu-visible {
+	opacity: 1;
+	display: block;
+}
+
+.mobile-nav-toggle {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 22px;
+	height: 14px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	cursor: pointer;
+}
+
+.mobile-nav-toggle span {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background: #1F2937;
+	border-radius: 1px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.mobile-nav-toggle span:nth-child(1) {
+	top: 0px;
+}
+
+.mobile-nav-toggle span:nth-child(2),
+.mobile-nav-toggle span:nth-child(3) {
+	top: 6px;
+}
+
+.mobile-nav-toggle span:nth-child(4) {
+	top: 12px;
+}
+
+.mobile-nav-toggle-open span {
+	background-color: #fff;
+}
+
+.mobile-nav-toggle-open span:nth-child(1) {
+	top: 6px;
+	width: 0%;
+	left: 50%;
+}
+
+.mobile-nav-toggle-open span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.mobile-nav-toggle-open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.mobile-nav-toggle-open span:nth-child(4) {
+	top: 6px;
+	width: 0%;
+	left: 50%;
+}
 
 @font-face {
   font-family: 'Excon-Variable';

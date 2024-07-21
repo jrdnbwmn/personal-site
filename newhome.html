@@ -4,35 +4,56 @@ layout: plain
 
 <!-- Header -->
 <header>
-    <div class="px-5 w-full flex content-center">
+    <div class="px-4 w-full flex content-center">
         <div class="border-b-2 border-solid border-slate-700 py-5 w-full">
             <nav>
                 <ul class="flex items-center list-none">
-                    <li class="mr-10"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-fingerprint"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3" /><path d="M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6" /><path d="M12 11v2a14 14 0 0 0 2.5 8" /><path d="M8 15a18 18 0 0 0 1.8 6" /><path d="M4.9 19a22 22 0 0 1 -.9 -7v-1a8 8 0 0 1 12 -6.95" /></svg></li>
-                    <li class="mr-10"><a class="link-underline" href="/projects">Projects</a></li>
-                    <li><a class="link-underline" href="/about">About</a></li>
-                    <li class="ml-auto"><a class="link-underline" href="https://savvycal.com/jordanbowman/meeting">Let's chat ↗</a></li>
+                    <li class="mr-10"><a href="/">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-fingerprint"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3" /><path d="M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6" /><path d="M12 11v2a14 14 0 0 0 2.5 8" /><path d="M8 15a18 18 0 0 0 1.8 6" /><path d="M4.9 19a22 22 0 0 1 -.9 -7v-1a8 8 0 0 1 12 -6.95" /></svg>
+                    </a></li>
+                    <li class="hidden sm:list-item mr-10"><a class="link-underline" href="/projects">Projects</a></li>
+                    <li class="hidden sm:list-item"><a class="link-underline" href="/about">About</a></li>
+                    <li class="sm:hidden ml-auto">
+                        <div class="mobile-nav-toggle z-20">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="hidden sm:list-item ml-auto"><a class="link-underline" href="https://savvycal.com/jordanbowman/meeting">Let's chat ↗</a></li>
                 </ul>
             </nav>
             <!-- <div class="flex-1 text-right">
-                <button class="px-4 py-2 text-sm rounded-full">Contact me</button>
+                <button class="px-4 py-2 text-sm rounded-[999px]">Contact me</button>
             </div> -->
         </div>
     </div>
 </header>
 
+
+<!-- Mobile nav -->
+<nav class="mobile-nav-menu transition-all z-10 fixed top-0 bottom-0 left-0 right-0 overflow-hidden text-white" style="background-color: #5267AB;">
+    <div class="flex flex-col items-center justify-center text-center w-full h-full">
+        <div class="block"><a class="block text-5xl mb-10" href="/projects">Projects</a></div>
+        <div class="block"><a class="block text-5xl mb-10" href="/about">About</a></div>
+        <div class="block"><a class="block text-5xl" href="https://savvycal.com/jordanbowman/meeting">Let's chat ↗</a></div>
+    </div>
+</nav>
+
+
 <!-- Hero -->
 <section>
-    <div class="container px-5 max-w-screen-2xl mx-auto pt-20 pb-16">
+    <div class="container px-4 max-w-screen-2xl mx-auto pt-20 pb-16">
         <div class="grid grid-cols-8 gap-4">
             <div class="md:col-span-5 col-span-full">
-                <h1 class="font-bold font-display tracking-tight text-7xl mb-3">Jordan Bowman,</h1>
+                <h1 class="font-bold font-display tracking-tight text-7xl mb-3">Jordan Bowman</h1>
                 <p class="font-bold font-display tracking-tight text-7xl">Product Designer</p>
             </div>
             <div class="md:col-span-3 col-span-full">
                 <p class="font-normal text-xl">I create art that is both aesthetically pleasing and emotionally resonant. I also design user interfaces that are intuitive and user-friendly.</p>
                 <div class="mt-4">
-                    <a href="https://www.linkedin.com/" class="inline-block mr-3 py-1 px-3 border-2 border-gray-800 border-solid rounded-full text-xs hover:bg-gray-800 hover:text-white transition-colors" style="border-radius: 999px;">
+                    <a href="https://www.linkedin.com/" class="inline-block mr-3 py-1 px-3 border-2 border-gray-800 border-solid rounded-[999px] text-xs hover:bg-gray-800 hover:text-white transition-colors rounded-[999px]">
                         <div class="flex items-center gap-1">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -49,7 +70,7 @@ layout: plain
                             <div class="font-mono">LinkedIn</div>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/" class="inline-block mr-3 py-1 px-3 border-2 border-gray-800 border-solid rounded-full text-xs hover:bg-gray-800 hover:text-white transition-colors" style="border-radius: 999px;">
+                    <a href="https://www.linkedin.com/" class="inline-block mr-3 py-1 px-3 border-2 border-gray-800 border-solid rounded-[999px] text-xs hover:bg-gray-800 hover:text-white transition-colors rounded-[999px]">
                         <div class="flex items-center gap-1">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -66,7 +87,7 @@ layout: plain
                             <div class="font-mono">Twitter</div>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/" class="inline-block mr-3 py-1 px-3 border-2 border-gray-800 border-solid rounded-full text-xs hover:bg-gray-800 hover:text-white transition-colors" style="border-radius: 999px;">
+                    <a href="https://www.linkedin.com/" class="inline-block mr-3 py-1 px-3 border-2 border-gray-800 border-solid rounded-[999px] text-xs hover:bg-gray-800 hover:text-white transition-colors rounded-[999px]">
                         <div class="flex items-center gap-1">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -89,14 +110,15 @@ layout: plain
     </div>
 </section>
 
+
 <!-- Values -->
 <section>
-    <div class="container px-5 pb-24 max-w-screen-2xl mx-auto">
+    <div class="container px-4 pb-24 max-w-screen-2xl mx-auto">
         <!-- <div class="max-w-160 mb-8">
             <h2 class="text-3xl font-medium">My values</h2>
             <p>Website design & development for an on-demand accountability app for solopreneurs.</p>
         </div> -->
-        <div class="grid md:grid-cols-3 grid-rows-6 md:grid-rows-3 gap-5" style="grid-template-columns: 4fr 3fr 3fr;">
+        <div class="grid md:grid-cols-3 grid-rows-6 md:grid-rows-3 gap-4" style="grid-template-columns: 3.5fr 3fr 3fr;">
             <!-- Maybe make these have subtle/moving svg background patterns? -->
             <!-- Need to change up the spacing a bit so it's not the exact same thing -->
             <div class="rounded-xl col-span-3 md:col-span-1 row-span-1 md:row-span-2 p-8 max-w-full flex border-2 border-solid border-slate-700"> <!--  style="background-color: #C3B2E7; color: #52225E;" -->
@@ -125,7 +147,7 @@ layout: plain
                     <img src="https://cdn.prod.website-files.com/63dae19244d432799bf5baa4/63e083f447ab584c75ba3c35_cutting%20edge.svg"
                         loading="lazy" alt="">
                     <div class="flex justify-end flex-col flex-1">
-                        <p class="text-2xl font-bold font-display">Build with clarity</p>
+                        <p class="text-2xl font-bold font-display">Build for clarity</p>
                         <p class="mt-4">Explore. Adapt. Stay curious. Our team lives by these values, designing to inspire and create a
                             better, more interesting world.</p>
                     </div>
@@ -158,7 +180,7 @@ layout: plain
                     <img src="https://cdn.prod.website-files.com/63dae19244d432799bf5baa4/63e083f447ab584c75ba3c35_cutting%20edge.svg"
                         loading="lazy" alt="">
                     <div class="flex justify-end flex-col flex-1">
-                        <p class="text-2xl font-bold font-display">Be a problem solver</p>
+                        <p class="text-2xl font-bold font-display">Take ownership</p>
                         <p class="mt-4">Explore. Adapt. Stay curious. Our team lives by these values, designing to inspire and create a
                             better, more interesting world.</p>
                     </div>
@@ -174,9 +196,10 @@ layout: plain
     </div>
 </section>
 
+
 <!-- Projects -->
-<section class="px-5">
-    <div class="rounded-xl py-32" style="background-color: #F7D9D3; color: #37110A;">
+<section class="px-4">
+    <div class="rounded-xl py-32 bg-amber-100 text-amber-950">
         <div class="container px-8 max-w-screen-2xl mx-auto">
             <div class="pb-16 border-solid border-slate-700">
                 <h2 class="text-5xl font-bold font-display mb-4">Projects</h2>
@@ -185,8 +208,7 @@ layout: plain
             <div class="grid md:grid-cols-3 gap-4 mb-20" style="grid-template-columns: 4fr 3fr 3fr;">
                 <div class="md:col-span-1 max-w-full flex flex-col">
                     <div class="mb-4">
-                        <a class="inline-block mr-3 py-1 px-3 rounded-full text-xs"
-                            style="border-radius: 999px; background-color: #e8bcb3;">
+                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
                             <div class="flex items-center gap-1">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -203,8 +225,7 @@ layout: plain
                                 <div class="">Pragmatic</div>
                             </div>
                         </a>
-                        <a class="inline-block mr-3 py-1 px-3 rounded-full text-xs"
-                            style="border-radius: 999px; background-color: #e8bcb3;">
+                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
                             <div class="flex items-center gap-1">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -243,8 +264,7 @@ layout: plain
             <div class="grid md:grid-cols-3 gap-4 mb-20" style="grid-template-columns: 4fr 3fr 3fr;">
                 <div class="md:col-span-1 max-w-full flex flex-col">
                     <div class="mb-4">
-                        <a class="inline-block mr-3 py-1 px-3 rounded-full text-xs"
-                            style="border-radius: 999px; background-color: #e8bcb3;">
+                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
                             <div class="flex items-center gap-1">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -261,8 +281,7 @@ layout: plain
                                 <div class="">Pragmatic</div>
                             </div>
                         </a>
-                        <a class="inline-block mr-3 py-1 px-3 rounded-full text-xs"
-                            style="border-radius: 999px; background-color: #e8bcb3;">
+                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
                             <div class="flex items-center gap-1">
                                 <div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -305,7 +324,7 @@ layout: plain
 
 <!-- Skills -->
 <section>
-    <div class="container px-5 max-w-screen-2xl mx-auto">
+    <div class="container px-4 max-w-screen-2xl mx-auto">
         <div class="px-8">
             <div class="pt-32 pb-32">
                 <h2 class="text-5xl font-bold font-display mb-4">Skills</h2>
@@ -344,7 +363,7 @@ layout: plain
 
 
 <!-- Resume -->
-<section class="px-5 pb-5">
+<section class="px-4 pb-5">
     <div class="rounded-xl py-60" style="background-color: #EAE7DC;">
         <div class="container px-8 max-w-screen-2xl mx-auto">
             <div class="">
@@ -352,33 +371,29 @@ layout: plain
                 <p class="text-xl">Website design & development for an on-demand accountability app for solopreneurs.</p>
             </div>
 
-            <ol class="mt-12 relative border-s border-gray-200 dark:border-gray-700">
+            <ol class="mt-12 relative border-l-2 border-solid" style="border-color: #b3af9f;">
                 <li class="mb-10 ms-4">
-                    <div
-                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                    </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a
+                    <div class="absolute w-3 h-3 bg-slate-400 rounded-[999px] mt-1.5 -start-1 border border-slate-400" style="background-color:#b3af9f; border-color:#b3af9f; inset-inline-start: -.42rem;"></div>
+                    <time class="mb-1 text-sm font-normal leading-none">February 2022</time>
+                    <h3 class="text-lg font-semibold">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal">Get access to over 20+ pages including a
                         dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
                 </li>
                 <li class="mb-10 ms-4">
-                    <div
-                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                    </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first
-                        designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                    <div class="absolute w-3 h-3 bg-slate-400 rounded-[999px] mt-1.5 -start-1 border border-slate-400"
+                        style="background-color:#b3af9f; border-color:#b3af9f; inset-inline-start: -.42rem;"></div>
+                    <time class="mb-1 text-sm font-normal leading-none">February 2022</time>
+                    <h3 class="text-lg font-semibold">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal">Get access to over 20+ pages including a
+                        dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
                 </li>
                 <li class="ms-4">
-                    <div
-                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                    </div>
-                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and
-                        interactive elements built on top of Tailwind CSS.</p>
+                    <div class="absolute w-3 h-3 bg-slate-400 rounded-[999px] mt-1.5 -start-1 border border-slate-400"
+                        style="background-color:#b3af9f; border-color:#b3af9f; inset-inline-start: -.42rem;"></div>
+                    <time class="mb-1 text-sm font-normal leading-none">February 2022</time>
+                    <h3 class="text-lg font-semibold">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal">Get access to over 20+ pages including a
+                        dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
                 </li>
             </ol>
         </div>
@@ -388,7 +403,7 @@ layout: plain
 
 <!-- Testimonials -->
 <section>
-    <div class="container px-5 max-w-screen-2xl mx-auto">
+    <div class="container px-4 max-w-screen-2xl mx-auto">
         <div class="px-8">
             <div class="pt-32 pb-32">
                 <h2 class="text-5xl font-bold font-display mb-4">Kind words</h2>
@@ -400,12 +415,12 @@ layout: plain
 
 
 <!-- Footer -->
-<footer class="px-5 pb-5">
+<footer class="px-4 pb-5">
     <div class="rounded-xl py-60" style="background-color: #233B38; color: #E9EFEE;">
         <div class="container px-8 max-w-screen-2xl mx-auto">
             <!-- CTA -->
             <p class="text-5xl text-center font-bold font-display mb-12">Let's build something together</p>
-            <a href="https://savvycal.com/jordanbowman/meeting" class="block rounded-xl text-center p-8 bg-white" style="color: #233B38">
+            <a href="https://savvycal.com/jordanbowman/meeting" class="block text-3xl text-center p-8 bg-white rounded-[999px]" style="color: #233B38;>
                 <p class="text-4xl font-bold">Schedule a call →</p>
             </a>
         </div>
