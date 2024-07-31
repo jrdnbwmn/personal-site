@@ -129,6 +129,17 @@ html {
 	left: 50%;
 }
 
+.reveal-on-hover-child {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.3s, opacity 0.3s ease-out;
+}
+.reveal-on-hover-parent:hover .reveal-on-hover-child {
+	visibility: visible;
+	opacity: 1;
+
+}
+
 @font-face {
   font-family: 'Excon-Variable';
   src: url('/fonts/Excon-Variable.woff2') format('woff2'),

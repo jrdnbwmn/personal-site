@@ -44,7 +44,7 @@ layout: plain
 
 <!-- Hero -->
 <section>
-    <div class="container px-4 max-w-full xl:w-screen-2xl mx-auto pt-20 pb-16">
+    <div class="container px-8 max-w-screen-2xl mx-auto pt-20 pb-16">
         <div class="grid grid-cols-8 gap-4">
             <div class="md:col-span-5 col-span-full">
                 <h1 class="font-bold font-display tracking-tight text-7xl mb-3">Jordan Bowman</h1>
@@ -78,7 +78,7 @@ layout: plain
 
 <!-- Values -->
 <section>
-    <div class="container px-4 pb-28 max-w-full xl:w-screen-2xl mx-auto">
+    <div class="container px-8 pb-28 max-w-screen-2xl mx-auto">
         <div class="grid md:grid-cols-3 grid-rows-6 md:grid-rows-3 gap-4" style="grid-template-columns: 3.5fr 3fr 3fr;">
             <div class="rounded-xl col-span-3 md:col-span-1 row-span-1 md:row-span-2 p-8 max-w-full flex border-2 border-solid border-slate-700"> <!--  style="background-color: #C3B2E7; color: #52225E;" -->
                 <div class="grid grid-cols-1 gap-4 justify-between flex-col">
@@ -177,139 +177,267 @@ layout: plain
 <!-- Projects -->
 <section class="px-4">
     <div class="rounded-xl py-28 bg-amber-200" style="color: #2b1102">
-        <div class="container px-8 max-w-screen-xl mx-auto">
+        <div class="container px-8 max-w-screen-2xl mx-auto">
             <div class="pb-16 border-solid border-slate-700">
                 <h2 class="text-5xl font-bold font-display mb-4">Projects</h2>
                 <p class="text-xl max-w-160">Website design & development for an on-demand accountability app for solopreneurs.</p>
             </div>
 
-            <div>
-                <img src="/assets/img/project3.png" class="rounded-xl">
-                <div class="mt-6">
-                    <div class="mb-2">
-                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-300 rounded-[999px]">
-                            <div class="flex items-center gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 12l0 .01" />
-                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
-                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
-                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
-                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
-                                    </svg>
+            <div class="grid md:grid-cols-2 gap-5">
+                <div class="md:col-span-1 max-w-full flex">
+                    <a href="/"
+                        class="block rounded-xl p-8 bg-white hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent">
+                        <img src="/assets/img/project4.png" style="border-radius: 16px">
+                        <div class="mt-8">
+                            <div class="flex items-end">
+                                <div class="grow">
+                                    <div class="mb-2">
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 12l0 .01" />
+                                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
+                                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
+                                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
+                                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Pragmatic</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Team-oriented</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
+                                    <p class="max-w-160">Website design & development for an on-demand accountability app for solopreneurs.
+                                    </p>
                                 </div>
-                                <div class="">Pragmatic</div>
-                            </div>
-                        </a>
-                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-300 rounded-[999px]">
-                            <div class="flex items-center gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
-                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
-                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
-                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
-                                    </svg>
+                                <div class="justify-end">
+                                    <div class="reveal-on-hover-child">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#1f2937" viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z">
+                                            </path>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="">Team-oriented</div>
                             </div>
-                        </a>
-                    </div>
-                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
-                    <p class="mb-4 max-w-160">Website design & development for an on-demand accountability app for solopreneurs.</p>
+                        </div>
+                    </a>
                 </div>
-            </div>
 
-            <div class="mt-16">
-                <img src="/assets/img/project3.png" class="rounded-xl">
-                <div class="mt-6">
-                    <div class="mb-2">
-                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-300 rounded-[999px]">
-                            <div class="flex items-center gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 12l0 .01" />
-                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
-                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
-                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
-                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
-                                    </svg>
+                <div class="md:col-span-1 max-w-full flex">
+                    <a href="/"
+                        class="block rounded-xl p-8 bg-white hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent">
+                        <img src="/assets/img/project4.png" style="border-radius: 16px">
+                        <div class="mt-8">
+                            <div class="flex items-end">
+                                <div class="grow">
+                                    <div class="mb-2">
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 12l0 .01" />
+                                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
+                                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
+                                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
+                                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Pragmatic</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Team-oriented</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
+                                    <p class="max-w-160">Website design & development for an on-demand accountability app for
+                                        solopreneurs.
+                                    </p>
                                 </div>
-                                <div class="">Pragmatic</div>
-                            </div>
-                        </a>
-                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-300 rounded-[999px]">
-                            <div class="flex items-center gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
-                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
-                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
-                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
-                                    </svg>
+                                <div class="justify-end">
+                                    <div class="reveal-on-hover-child">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#1f2937"
+                                            viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z">
+                                            </path>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="">Team-oriented</div>
                             </div>
-                        </a>
-                    </div>
-                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
-                    <p class="mb-4 max-w-160">Website design & development for an on-demand accountability app for solopreneurs.</p>
+                        </div>
+                    </a>
                 </div>
-            </div>
 
-            <div class="mt-16">
-                <img src="/assets/img/project3.png" class="rounded-xl">
-                <div class="mt-6">
-                    <div class="mb-2">
-                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-300 rounded-[999px]">
-                            <div class="flex items-center gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 12l0 .01" />
-                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
-                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
-                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
-                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
-                                    </svg>
+                <div class="md:col-span-1 max-w-full flex">
+                    <a href="/"
+                        class="block rounded-xl p-8 bg-white hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent">
+                        <img src="/assets/img/project4.png" style="border-radius: 16px">
+                        <div class="mt-8">
+                            <div class="flex items-end">
+                                <div class="grow">
+                                    <div class="mb-2">
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 12l0 .01" />
+                                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
+                                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
+                                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
+                                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Pragmatic</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Team-oriented</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
+                                    <p class="max-w-160">Website design & development for an on-demand accountability app for
+                                        solopreneurs.
+                                    </p>
                                 </div>
-                                <div class="">Pragmatic</div>
-                            </div>
-                        </a>
-                        <a class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-300 rounded-[999px]">
-                            <div class="flex items-center gap-1">
-                                <div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
-                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
-                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
-                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
-                                    </svg>
+                                <div class="justify-end">
+                                    <div class="reveal-on-hover-child">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#1f2937"
+                                            viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z">
+                                            </path>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <div class="">Team-oriented</div>
                             </div>
-                        </a>
-                    </div>
-                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
-                    <p class="mb-4 max-w-160">Website design & development for an on-demand accountability app for solopreneurs.</p>
+                        </div>
+                    </a>
                 </div>
+
+                <div class="md:col-span-1 max-w-full flex">
+                    <a href="/"
+                        class="block rounded-xl p-8 bg-white hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent">
+                        <img src="/assets/img/project4.png" style="border-radius: 16px">
+                        <div class="mt-8">
+                            <div class="flex items-end">
+                                <div class="grow">
+                                    <div class="mb-2">
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-access-point">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 12l0 .01" />
+                                                        <path d="M14.828 9.172a4 4 0 0 1 0 5.656" />
+                                                        <path d="M17.657 6.343a8 8 0 0 1 0 11.314" />
+                                                        <path d="M9.168 14.828a4 4 0 0 1 0 -5.656" />
+                                                        <path d="M6.337 17.657a8 8 0 0 1 0 -11.314" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Pragmatic</div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-block mr-3 py-1 px-3 rounded-[999px] text-xs bg-amber-200 rounded-[999px]">
+                                            <div class="flex items-center gap-1">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="icon icon-tabler icons-tabler-outline icon-tabler-api-app">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                        <path d="M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5" />
+                                                        <path d="M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5" />
+                                                        <path d="M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5" />
+                                                        <path d="M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5" />
+                                                    </svg>
+                                                </div>
+                                                <div class="">Team-oriented</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-3xl font-bold font-display mb-2">A design system</h3>
+                                    <p class="max-w-160">Website design & development for an on-demand accountability app for
+                                        solopreneurs.
+                                    </p>
+                                </div>
+                                <div class="justify-end">
+                                    <div class="reveal-on-hover-child">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#1f2937"
+                                            viewBox="0 0 256 256">
+                                            <path
+                                                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-93.66a8,8,0,0,1,0,11.32l-32,32a8,8,0,0,1-11.32-11.32L148.69,136H88a8,8,0,0,1,0-16h60.69l-18.35-18.34a8,8,0,0,1,11.32-11.32Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
 
             <!-- <div class="grid md:grid-cols-3 gap-4">
@@ -581,8 +709,8 @@ layout: plain
 
 <!-- Skills -->
 <section>
-    <div class="container px-4 max-w-screen-2xl mx-auto">
-        <div class="px-8">
+    <div class="container px-8 max-w-screen-2xl mx-auto">
+        <div>
             <div class="py-28">
                 <h2 class="text-5xl font-bold font-display mb-4">Skills</h2>
                 <div class="grid md:grid-cols-6 gap-10">
@@ -632,7 +760,7 @@ layout: plain
                 <p class="text-xl">Website design & development for an on-demand accountability app for solopreneurs.</p>
             </div>
 
-            <ol class="mt-12 relative border-l-2 border-solid" style="border-color: #b3af9f;">
+            <!-- <ol class="mt-12 relative border-l-2 border-solid" style="border-color: #b3af9f;">
                 <li class="mb-10 ms-4">
                     <div class="absolute w-3 h-3 bg-slate-400 rounded-[999px] mt-1.5 -start-1 border border-slate-400" style="background-color:#b3af9f; border-color:#E9E7DC; border-width:3px; inset-inline-start: -.42rem;"></div>
                     <time class="mb-1 text-sm font-normal leading-none">February 2022</time>
@@ -656,7 +784,7 @@ layout: plain
                     <p class="mb-4 text-base font-normal">Get access to over 20+ pages including a
                         dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
                 </li>
-            </ol>
+            </ol> -->
         </div>
     </div>
 </section>
@@ -664,8 +792,8 @@ layout: plain
 
 <!-- Testimonials -->
 <section>
-    <div class="container px-4 max-w-screen-2xl mx-auto">
-        <div class="px-8">
+    <div class="container px-8 max-w-screen-2xl mx-auto">
+        <div>
             <div class="py-28">
                 <h2 class="text-5xl font-bold font-display mb-4">Kind words</h2>
                 <p class="text-xl">Website design & development for an on-demand accountability app for solopreneurs.</p>
