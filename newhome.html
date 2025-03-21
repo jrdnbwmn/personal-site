@@ -2,32 +2,7 @@
 layout: plain
 ---
 
-<!-- Header -->
-<header>
-    <div class="px-4 w-full flex content-center">
-        <div class="border-b-2 border-solid border-neutral-700 py-5 w-full">
-            <nav>
-                <ul class="flex items-center list-none">
-                    <li class="mr-10"><a href="/">
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-fingerprint"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3" /><path d="M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6" /><path d="M12 11v2a14 14 0 0 0 2.5 8" /><path d="M8 15a18 18 0 0 0 1.8 6" /><path d="M4.9 19a22 22 0 0 1 -.9 -7v-1a8 8 0 0 1 12 -6.95" /></svg>
-                    </a></li>
-                    <li class="hidden sm:list-item mr-10"><a class="link-underline" href="/projects">Projects</a></li>
-                    <li class="hidden sm:list-item"><a class="link-underline" href="/about">About</a></li>
-                    <li class="sm:hidden ml-auto">
-                        <div class="mobile-nav-toggle z-20">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </li>
-                    <li class="hidden sm:list-item ml-auto"><a class="link-underline" href="https://savvycal.com/jordanbowman/meeting">Let's chat ↗</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-
+{%- include nav.html -%}
 
 <!-- Mobile nav -->
 <nav class="mobile-nav-menu transition-all z-10 fixed top-0 bottom-0 left-0 right-0 overflow-hidden text-white" style="background-color: #5267AB;">
@@ -44,7 +19,7 @@ layout: plain
     <div class="container px-8 max-w-screen-2xl mx-auto pt-20 pb-16">
         <div class="grid grid-cols-8 gap-4">
             <div class="md:col-span-5 col-span-full">
-                <h1 class="font-bold font-display tracking-tight text-7xl mb-3">Jordan Bowman</h1>
+                <h1 class="font-bold font-display tracking-tight text-7xl mb-3">Jordan Bowman,</h1>
                 <p class="font-bold font-display tracking-tight text-7xl">Product Designer</p>
             </div>
             <div class="md:col-span-3 col-span-full">
@@ -183,7 +158,7 @@ layout: plain
             <div class="grid md:grid-cols-2 gap-5">
                 <div class="md:col-span-1 max-w-full flex">
                     <a href="/"
-                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent" style="background-color: #f9f8f4;">
+                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1 transition-transform duration-300 ease-out reveal-on-hover-parent" style="background-color: #f9f8f4;">
                         <img src="/assets/img/project4.png" style="border-radius: 16px">
                         <div class="mt-8">
                             <div class="flex items-end">
@@ -222,7 +197,7 @@ layout: plain
 
                 <div class="md:col-span-1 max-w-full flex">
                     <a href="/"
-                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent"
+                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1 transition-transform duration-300 ease-out reveal-on-hover-parent"
                         style="background-color: #f9f8f4;">
                         <img src="/assets/img/project4.png" style="border-radius: 16px">
                         <div class="mt-8">
@@ -280,7 +255,7 @@ layout: plain
 
                 <div class="md:col-span-1 max-w-full flex">
                     <a href="/"
-                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent"
+                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1 transition-transform duration-300 ease-out reveal-on-hover-parent"
                         style="background-color: #f9f8f4;">
                         <img src="/assets/img/project4.png" style="border-radius: 16px">
                         <div class="mt-8">
@@ -338,7 +313,7 @@ layout: plain
 
                 <div class="md:col-span-1 max-w-full flex">
                     <a href="/"
-                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1.5 transition-transform duration-300 ease-out reveal-on-hover-parent"
+                        class="block text-neutral-800 rounded-xl p-8 hover:-translate-y-1 transition-transform duration-300 ease-out reveal-on-hover-parent"
                         style="background-color: #f9f8f4;">
                         <img src="/assets/img/project4.png" style="border-radius: 16px">
                         <div class="mt-8">
@@ -623,7 +598,7 @@ layout: plain
             <!-- CTA -->
             <div class="text-center max-w-160 mx-auto">
                 <p class="text-5xl font-bold font-display mb-4">Let's build something together</p>
-                <p class="text-xl mb-12">Website design & development for an on-demand accountability app for solopreneurs.</p>
+                <p class="text-xl mb-12">Website design & development for an on-demand accountability app for solopreneurs. Or <a href="" class="link-underline">email me directly</a>.</p>
             </div>
             <div class="text-center">
                 <a href="https://savvycal.com/jordanbowman/meeting"
@@ -640,7 +615,7 @@ layout: plain
                     <a href="" class="inline-block px-4">Mastodon</a>
                 </div>
                 <div class="mt-4 text-center">
-                    <p class="text-[#69807d]">Copyright © 2024 Jordan Bowman All rights reserved</p>
+                    <p class="text-[#69807d]">Copyright © 2024 Jordan Bowman. All rights reserved.</p>
                 </div>
             </div>
         </div>
